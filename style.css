@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-do-texto: black;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: var(--cor-do-texto);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header{
+    color:var(--cor-do-texto)    
+    padding: 10px 0;
+    text-align: center;
+}
