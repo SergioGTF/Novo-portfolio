@@ -165,7 +165,7 @@ section h2 {
 
 #social-links {
     display: flex;
-    justify-content: center; /* Centraliza os links horizontalmente */
+    justify-content: center; 
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
