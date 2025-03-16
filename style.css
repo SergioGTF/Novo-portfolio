@@ -252,4 +252,54 @@ footer p {
     section {
         padding: 1rem;
     }
+
+    .projeto {
+        padding: 1rem;
+    }
+
+    .projeto-info h3 {
+        font-size: 1rem;
+    }
+
+    .projeto-icones .icone {
+        width: 30px;
+        height: 30px;
+    }
+
+    #social-links a {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    #social-links a i {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0.25rem 0;
+    }
+
+    .projeto-info h3 {
+        font-size: 0.875rem;
+    }
+
+    .projeto-icones .icone {
+        width: 25px;
+        height: 25px;
+    }
+
+    #social-links a {
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+
+    #social-links a i {
+        font-size: 1rem;
+    }
 }
