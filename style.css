@@ -235,6 +235,7 @@ footer p {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Media Queries para responsividade */
 @media (max-width: 768px) {
     header {
         padding: 0.5rem;
@@ -251,6 +252,7 @@ footer p {
 
     section {
         padding: 1rem;
+        margin: 0.5rem;
     }
 
     .projeto {
@@ -283,6 +285,11 @@ footer p {
 
     nav ul li {
         margin: 0.25rem 0;
+    }
+
+    section {
+        padding: 0.5rem;
+        margin: 0.25rem;
     }
 
     .projeto-info h3 {
