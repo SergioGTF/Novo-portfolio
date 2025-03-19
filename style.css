@@ -122,6 +122,12 @@ section h2 {
     color: #fff;
 }
 
+a {
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
 /* Seção de projetos */
 #projetos {
     padding: 2rem;
