@@ -11,20 +11,55 @@
     <main>
         <section id="contato">
             <h2>Entre em Contato</h2>
-            <p>Conecte-se comigo através das minhas redes sociais!</p>
-            <div id="social-links">
-                <a href="https://github.com/SergioGTF" target="_blank" class="social-btn github" aria-label="GitHub">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.instagram.com/sergiotavaresfarias/" target="_blank" class="social-btn instagram" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-                <a href="https://www.linkedin.com/in/sergio-gabriel-tavares-farias-624775268/" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://wa.me/qr/3K2H7PQQR6MJF1" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
+            <p class="contato-descricao">Estou disponível para oportunidades e colaborações. Sinta-se à vontade para entrar em contato através das minhas redes ou pelo formulário abaixo.</p>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="form-contato" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Redes Sociais</h3>
+                    <p>Conecte-se comigo através das minhas redes:</p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/SergioGTF" target="_blank" class="social-btn github" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sergio-gabriel-tavares-farias-624775268/" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/sergiotavaresfarias/" target="_blank" class="social-btn instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://wa.me/qr/3K2H7PQQR6MJF1" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="mailto:sergiogabrieltf@gmail.com" class="social-btn email" aria-label="E-mail">
+                            <i class="fas fa-envelope"></i>
+                            <span>E-mail</span>
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
         </section>
     </main>

@@ -3,32 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Descrição" content="Portfólio Web para autopromoção" />
-    <meta name="Autor" content="Sergio Gabriel, Programador Full-stack" />
-    <title>Portfólio Novo</title>
+    <meta name="description" content="Portfólio de Sergio Gabriel - Desenvolvedor Full-stack">
+    <meta name="keywords" content="portfolio, desenvolvedor, fullstack, programador">
+    <meta name="author" content="Sergio Gabriel">
+    <title>Sergio Gabriel | Desenvolvedor Full-stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Assets/favicon.png" type="favicon">
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header id="cabeçalho"> 
-        <h1>Olá 👋, sou o Sergio, Desenvolvedor Full-stack.</h1>
-        <nav id="menu">
-            <ul>
-                <li><a href="Sobre.html" data-page="Sobre.html">Sobre</a></li>
-                <li><a href="Projetos.html" data-page="Projetos.html">Projetos</a></li>
-                <li><a href="Contato.html" data-page="Contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- Cursor Personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Botão de Voltar ao Topo -->
+    <button id="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header id="cabeçalho">
+        <div class="header-container">
+            <h1>
+                <span class="wave">👋</span> 
+                <span class="text-gradient">Olá, sou o Sergio</span>, 
+                <span class="typing-animation"></span>
+            </h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="Sobre.html" data-page="Sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="Projetos.html" data-page="Projetos.html" class="nav-link">Projetos</a></li>
+                    <li><a href="Contato.html" data-page="Contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main id="conteudo">
-        <!-- Todas as páginas html são carregadas aqui -->
+        <!-- Conteúdo será carregado dinamicamente -->
     </main>
     
     <footer>
-        <p>&copy; 2025 Sergio Gabriel. Todos os direitos reservados.</p>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://github.com/SergioGTF" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sergio-gabriel-tavares-farias-624775268/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sergiotavaresfarias/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/qr/3K2H7PQQR6MJF1" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Sergio Gabriel. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
