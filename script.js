@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const typingElement = document.querySelector('.typing-animation');
-    const professions = ['Desenvolvedor Full-stack', 'Engenheiro de Computação', 'Desenvolvedor de jogos', 'Mesa Tenista'];
+    const professions = ['Desenvolvedor Full-stack.', 'Engenheiro de Computação.', 'Desenvolvedor de jogos.', 'Mesa Tenista.'];
     let currentProfession = 0;
     let charIndex = 0;
     let isDeleting = false;

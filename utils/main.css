@@ -54,11 +54,62 @@ section h2::after {
     border-radius: 2px;
 }
 
+.btn-download {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: var(--shadow);
+}
+
+.btn-download:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-download:active {
+    transform: scale(0.95);
+}
+
 .sobre-conteudo {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
     align-items: center;
+}
+
+#sobre ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+#sobre ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--gray);
+    padding-left: 2rem;
+    position: relative;
+}
+
+#sobre ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    font-size: 1.2rem;
+    color: var(--primary);
 }
 
 .foto-sobre {
