@@ -151,13 +151,30 @@ document.addEventListener('DOMContentLoaded', function() {
         const nome = document.getElementById('nome').value.trim();
         const email = document.getElementById('email').value.trim();
         const mensagem = document.getElementById('mensagem').value.trim();
-    
+        const feedback = document.createElement('p');
+        feedback.classList.add('form-feedback');
+        
+        const existingFeedback = document.querySelector('.form-feedback');
+        if (existingFeedback) existingFeedback.remove();
+        
         if (!nome || !email || !mensagem) {
-            event.preventDefault();
-            alert('Por favor, preencha todos os campos.');
-        } else if (!/\S+@\S+\.\S+/.test(email)) {
-            event.preventDefault();
-            alert('Por favor, insira um e-mail válido.');
+            event.preventDefault(); 
+            feedback.textContent = 'Por favor, preencha todos os campos.';
+            feedback.style.color = 'red';
+            document.getElementById('form-contato').appendChild(feedback);
+            return;
         }
+        
+        if (!/\S+@\S+\.\S+/.test(email)) {
+            event.preventDefault(); 
+            feedback.textContent = 'Por favor, insira um e-mail válido.';
+            feedback.style.color = 'red';
+            document.getElementById('form-contato').appendChild(feedback);
+            return;
+        }
+        
+        feedback.textContent = 'Enviando mensagem...';
+        feedback.style.color = 'blue';
+        document.getElementById('form-contato').appendChild(feedback);
     });
 });
