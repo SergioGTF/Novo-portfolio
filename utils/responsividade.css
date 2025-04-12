@@ -1,0 +1,105 @@
+@media (max-width: 1024px) {
+
+    .sobre-conteudo,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-sobre {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 60px; 
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    main {
+        margin-top: 60px; 
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    section#sobre {
+        padding-top: 1rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sobre-conteudo {
+        gap: 2rem;
+    }
+
+    .social-link {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    #back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .projeto-info {
+        padding: 1.2rem;
+    }
+
+    .projeto-title {
+        font-size: 1.2rem;
+    }
+
+    .icone {
+        width: 28px;
+        height: 28px;
+    }
+}

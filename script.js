@@ -146,4 +146,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    document.getElementById('form-contato').addEventListener('submit', function(event) {
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const mensagem = document.getElementById('mensagem').value.trim();
+    
+        if (!nome || !email || !mensagem) {
+            event.preventDefault();
+            alert('Por favor, preencha todos os campos.');
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            event.preventDefault();
+            alert('Por favor, insira um e-mail válido.');
+        }
+    });
 });
