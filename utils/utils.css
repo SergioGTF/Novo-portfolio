@@ -25,6 +25,34 @@
     --warning-dark: #e68900;
 }
 
+/* Tema escuro */
+body.dark {
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --primary-dark: #3a0ca3;
+    --secondary: #7209b7;
+    --accent: #f72585;
+    --dark: #f8f9fa;
+    --darker: #23263a;
+    --light: #23263a;
+    --lighter: #181824;
+    --gray: #b0b3b8;
+    --gray-light: #23263a;
+    --success: #4cc9f0;
+    --warning: #f8961e;
+    --error: #ef233c;
+    --border-radius: 12px;
+    --border-radius-lg: 16px;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.18);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.18);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.18);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.18);
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition-slow: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --success-dark: #218838;
+    --warning-dark: #e68900;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 .preloader {

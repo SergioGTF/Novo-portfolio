@@ -29,3 +29,16 @@ footer {
     color: var(--primary-light);
     transform: translateY(-3px);
 }
+
+body.dark footer {
+    background-color: var(--darker);
+    color: var(--dark);
+}
+
+body.dark .footer-social a {
+    color: var(--dark);
+}
+
+body.dark .footer-social a:hover {
+    color: var(--primary-light);
+}

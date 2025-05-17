@@ -178,3 +178,33 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('form-contato').appendChild(feedback);
     });
 });
+
+const themeButton = document.getElementById('toggle-theme');
+    const themeIcon = document.getElementById('theme-icon');
+
+    function setTheme(dark) {
+        if (dark) {
+            document.body.classList.add('dark');
+            if (themeIcon) {
+                themeIcon.src = './Assets/moon-stars.svg';
+                themeIcon.alt = 'Tema claro';
+            }
+        } else {
+            document.body.classList.remove('dark');
+            if (themeIcon) {
+                themeIcon.src = './Assets/sun.svg';
+                themeIcon.alt = 'Tema escuro';
+            }
+        }
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') setTheme(true);
+
+    if (themeButton) {
+        themeButton.addEventListener('click', () => {
+            const isDark = !document.body.classList.contains('dark');
+            setTheme(isDark);
+        });
+    }

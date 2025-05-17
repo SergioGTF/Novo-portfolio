@@ -445,3 +445,55 @@ section h2::after {
     width: 20px;
     text-align: center;
 }
+
+.btn-theme {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    background: var(--lighter);
+    border: none;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    padding: 0.7rem;
+    cursor: pointer;
+    z-index: 1200;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-theme:hover {
+    background: var(--primary-light);
+}
+
+body.dark {
+    --lighter: #181824;
+    --light: #23263a;
+    --dark: #f8f9fa;
+    --gray: #b0b3b8;
+    --gray-light: #23263a;
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --primary-dark: #3a0ca3;
+    --accent: #f72585;
+    color: var(--dark);
+    background-color: var(--lighter);
+}
+
+body.dark section,
+body.dark main {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+body.dark .btn-download,
+body.dark .btn-enviar {
+    background-color: var(--primary-dark);
+    color: #fff;
+}
+
+body.dark .btn-download:hover,
+body.dark .btn-enviar:hover {
+    background-color: var(--primary);
+}

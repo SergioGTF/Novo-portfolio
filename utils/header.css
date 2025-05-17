@@ -67,3 +67,18 @@ nav ul {
 .nav-link.active::before {
     width: 100%;
 }
+
+body.dark header {
+    background-color: var(--darker);
+    color: var(--dark);
+}
+
+body.dark header h1,
+body.dark .nav-link {
+    color: var(--dark);
+}
+
+body.dark .nav-link:hover,
+body.dark .nav-link.active {
+    color: var(--primary);
+}
